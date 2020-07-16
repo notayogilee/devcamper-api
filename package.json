@@ -1,0 +1,12 @@
+{
+  "name": "devcamper_api",
+  "version": "1.0.0",
+  "description": "Devcamper backend api",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "author": "Lee Castelani",
+  "license": "ISC"
+}
