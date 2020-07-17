@@ -75,7 +75,7 @@ const BootcampSchema = new mongoose.Schema({
     type: String,
     default: 'no-photo.jpg'
   },
-  houseing: {
+  housing: {
     type: Boolean,
     default: false
   },
