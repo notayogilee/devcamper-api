@@ -96,11 +96,17 @@ const BootcampSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now
+  },
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'User',
+    required: true
   }
-}, {
-  toJSON: { virtuals: true },
-  toObject: { virtuals: true }
-});
+},
+  {
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true }
+  });
 
 // Create bootcamp slug from the name
 BootcampSchema.pre('save', function (next) {
